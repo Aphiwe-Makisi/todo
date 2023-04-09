@@ -9,12 +9,13 @@
     <title>Login</title>
   </head>
   <body>
-    <form method="POST" action="">
+    <form method="POST" action="login">
       {% csrf_token %}
       <p>Enter your username and password to login</p>
       <div class="form-input">
         <label for="username">Username</label>
-        <input type="text" name="username" placeholder="Enter your username" />
+        <input type="text" name="username" id="username" placeholder="Enter your username" />
+        <h6 class="hide" id="username-error">Username cannot be less than 3 characters long.</h6>
       </div>
       <div class="form-input">
         <label for="password">Password</label>
@@ -25,7 +26,6 @@
         />
       </div>
       <button type="submit">
-        <!-- <a href="index">Login</a> -->
         Login
       </button>
       <span>

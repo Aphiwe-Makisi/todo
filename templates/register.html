@@ -9,7 +9,6 @@
     <title>Register</title>
   </head>
   <body>
-    <div class="wrapper">
       <form method="POST" action="register">
         {% csrf_token %}
         <p>Please enter your details to create an account.</p>
@@ -70,7 +69,6 @@
           />
         </div>
         <button type="submit">
-          <!-- <a href="">Register</a> -->
           Register
         </button>
         <span
@@ -78,6 +76,5 @@
           <a href="login"><strong>Login Here</strong></a></span
         >
       </form>
-    </div>
   </body>
 </html>

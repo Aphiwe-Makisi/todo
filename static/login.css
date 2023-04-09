@@ -17,10 +17,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(219, 216, 0);
+  padding: 20px;
 }
 
 form {
-  width: 450px;
+  width: 400px;
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.65);
@@ -76,8 +77,23 @@ button:active {
   transform: scale(0.9);
 }
 
+span {
+  text-align: center;
+}
+
 h6 {
   color: #ff0000;
   text-align: center;
   font-weight: 400;
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  color: #ff0000;
+  text-align: center;
+  font-weight: 400;
+  display: block;
 }
