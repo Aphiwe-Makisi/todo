@@ -1,75 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, form, .form-input {
+  display: flex;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(219, 216, 0);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 216, 0);
 }
 
 form {
-    margin-top: 150px;
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.65);
-    height: fit-content;
-    padding: 40px;
-    gap: 10px;
-    border-radius: 15px;
+  width: 450px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  height: fit-content;
+  padding: 40px;
+  gap: 10px;
+  border-radius: 15px;
 }
 
 p {
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 35px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .form-input {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 1px solid green;
-    padding: 5px 3px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid green;
+  padding: 5px 3px;
 }
 
 input:focus {
-    border: 1px solid rgb(0, 128, 0);
-    border-radius: 4px;
+  border: 1px solid rgb(0, 128, 0);
+  border-radius: 4px;
 }
 
 button {
-    padding: 8px;
-    width: 100px;
-    margin-top: 30px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color: rgb(0, 128, 0);
+  background-color: rgb(0, 128, 0);
+  border: none;
+  outline: none;
+  width: 150px;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-button a {
-    text-decoration: none;
-    color: #fff;
+button:hover {
+  opacity: 0.9;
 }
 
-span a {
-    margin-top: 30px;
-    text-decoration: none;
+button:active {
+  transform: scale(0.9);
+}
+
+h6 {
+  color: #ff0000;
+  text-align: center;
+  font-weight: 400;
 }

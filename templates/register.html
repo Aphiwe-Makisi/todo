@@ -1,12 +1,83 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'login.css' %}">
     <title>Register</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form method="POST" action="register">
+        {% csrf_token %}
+        <p>Please enter your details to create an account.</p>
+        {% for message in messages %}
+          <h6>{{message}}</h6>
+        {% endfor %}
+        <div class="form-input">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Create a username"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="f_name">First name</label>
+          <input
+            type="text"
+            name="f_name"
+            placeholder="Enter your first name"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="l_name">Last name</label>
+          <input
+            type="text"
+            name="l_name"
+            placeholder="Enter your last name"
+          />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="password2">Confirm password</label>
+          <input
+            type="password"
+            name="password2"
+            placeholder="Re-type your password"
+            required
+          />
+        </div>
+        <button type="submit">
+          <!-- <a href="">Register</a> -->
+          Register
+        </button>
+        <span
+          >Already have an account?
+          <a href="login"><strong>Login Here</strong></a></span
+        >
+      </form>
+    </div>
+  </body>
 </html>
