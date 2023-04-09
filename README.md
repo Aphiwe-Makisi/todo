@@ -26,7 +26,13 @@ To use the project, follow these steps:
 
 The project is organized into the following files and directories:
 - `todos/`: Contains configuration files for the project, including settings.py and urls.py.
-- `todo_app/`: Contains the Django app for managing to-dos, including models.py, views.py, and templates/. Also contains the Django app for managing user authentication and authorization
+- `todo_app/`: Contains the Django app for managing to-dos, including models.py, views.py. Also contains the Django app for managing user authentication and authorization
+- `templates/` and `static/`: Contains the html templates and the styles for the different templates. 
+
+
+_____________________________________________________________________________________________________________________________________________________________________
+
+# Project sneak peeks
 
 ## Login Page
 
