@@ -12,6 +12,7 @@
     <form method="POST" action="login">
       {% csrf_token %}
       <p>Enter your username and password to login</p>
+      <h1>Heman</h1>
       <div class="form-input">
         <label for="username">Username</label>
         <input type="text" name="username" id="username" placeholder="Enter your username" />
@@ -32,5 +33,7 @@
         Dont have an account yet? <a href="register"><strong>Register Here</strong></a>
       </span>
     </form>
+
+    <!-- <script src="{% static 'script.js' %}"></script> -->
   </body>
 </html>

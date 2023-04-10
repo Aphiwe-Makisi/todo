@@ -29,6 +29,11 @@ form {
   padding: 40px;
   gap: 10px;
   border-radius: 15px;
+  box-shadow: 10px 5px 5px 3px rgba(90,120,88,0.75);
+}
+
+h1 {
+  color: #ff0000;
 }
 
 p {
