@@ -5,9 +5,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
     <title>Document</title>
   </head>
-  <body>
-    
+  <body id="home-page">
+    <nav>
+      <button>Logout</button>
+    </nav>
+
+    <div class="pop-up hide">
+      <div class="overlay">
+        <div class="new-todo-container">
+          <h2>Enter required fields for your new todo</h2>
+          <div class="input-wrapper">
+            <label class="popup-input-label" for="title">Title</label>
+            <input type="text" />
+            <label class="popup-input-label" for="description">Description</label>
+            <input type="text" />
+            <label class="popup-input-label" for="due_date">Due date</label>
+            <input type="date" />
+          </div>
+          <div class="actions">
+            <button id="close">Cancel</button>
+            <button id="save">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <button id="new">Add To-Do</button>
+    </div>
+
+    <script src="{% static 'js/home.js' %}"></script>
   </body>
 </html>
